@@ -1,0 +1,51 @@
+<div ng-controller="AboutCtrl">
+  <img src="{{onegood.imgurl}}" alt="" width="100%">
+  <h2 class="h2" align="center">{{onegood.title}}</h2>
+  <div>
+    <h4 class="h4 text-danger floatleft">价格:{{onegood.price}}元</h4>
+    <h4 class="h4 floatright" >崭新度:{{onegood.degree}}</h4>
+  </div>
+  <br><br>
+  <h4 class="h4">卖家有话说:</h4>
+  <div class="wordwrap">
+    <p class="lead">{{onegood.detail}}</p>
+  </div><br>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      卖家基本信息
+    </div>
+    <div class="panel-body">
+      <div class="floatleft" style="width: 30%"><img src="{{onegood.ybhead}}" alt="" class="img-circle" width="100%"></div>
+      <div class="floatright" style="width: 70%">
+        <h3 class="h3" align="center">{{onegood.ybname}}</h3>
+        <h5 class="h5" align="center">QQ:{{onegood.qq}}</h5>
+        <h5 class="h5" align="center">Tel:{{onegood.telephone}}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      大家有话说
+    </div>
+    <div class="panel-body" ng-repeat="sayer in says">
+      <div class="say">
+        <div class="floatleft" style="width: 20%"><img src="{{sayer.ybhead}}" alt="" width="100%"  class="img-circle"></div>
+        <div style="margin-left:30%">
+          <h4 class="h4">{{sayer.ybname}}</h4>
+          <p>{{sayer.detail}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <form class="form-horizontal">
+      <div class="form-group form-group-mg">
+        <div class="col-xs-10">
+          <input class="form-control" type="text" placeholder="我有话要说" ng-model="sayword">
+        </div>
+        <button class="col-xs-2 btn btn-primary" ng-click="pushon($event)">发表</button>
+      </div>
+    </form>
+  </div>
+</div>
+

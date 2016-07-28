@@ -1,0 +1,30 @@
+<form class="form-horizontal">
+  <div class="form-group form-group-mg">
+    <div class="col-xs-10">
+      <input class="form-control" type="text" placeholder="搜你想搜，只要我有" ng-model="search">
+    </div>
+    <button class="col-xs-2 btn btn-primary">搜索</button>
+  </div>
+</form>
+<div style="width: 100%;margin-top: 10px;word-wrap: break-word;word-break: normal; " ng-controller="MainCtrl">
+  <div class="showSection" ng-repeat="good in goods|filter:search">
+    <!--<div class="position">-->
+      <!--<div ng-if="good.delete==true">-->
+        <!--<span class="label label-default">已售</span>-->
+      <!--</div>-->
+      <!--<div ng-if="good.delete==false">-->
+        <!--<span class="label label-success">未售</span>-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="left-img" style="background-image:url({{good.imgurl}})"></div>
+    <div class="right-div">
+      <p><h4 class="title" align="center">{{good.title}}</h4>
+      <h6 class="degree" align="center">崭新度:{{good.degree}}</h6></p>
+      <h6 class="fenlei" align="center">分类:{{good.species}}</h6>
+      <div class="cen"><h6 class="text-danger price" align="center">价格:{{good.price}}元</h6>
+      <p align="center" class="margin"><button class="btn btn-success btn-sm"><a href="/#/{{good.id}}" class="noneunderline">进去看看</a></button></p></p>
+      </p>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,327 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width:600px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+
+  /*homePage style*/
+  .showSection {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    float: left;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0.1px 0.1px 20px gainsboro;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  .showSection:hover {
+    box-shadow: 1px 1px 50px gainsboro;
+  }
+
+  .left-img {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .right-div {
+    float: right;
+    width: 60%;
+  }
+
+  .noneunderline {
+    text-decoration: none;
+    color: white;
+  }
+
+  .noneunderline:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  .position {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  /*************About****************/
+  .wordwrap {
+    width: 100%;
+    padding: 5%;
+    border-radius: 5px;
+    border: solid 1px #2b81af;
+  }
+
+  .floatleft {
+    float: left;
+  }
+
+  .floatright {
+    float: right;
+  }
+
+  .say {
+    background-color: #dff0d8;
+    width: 100%;
+    height: 100px;
+    padding: 5%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  /*myadmin*/
+  .wrap {
+    display: table;
+  }
+
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+
+  .center img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*edit*/
+  .editwrap {
+    border: darkgray solid 1px;
+    padding: 20%;
+    border-radius: 5px
+  }
+  .title{
+    margin-top: 20px;
+    font-size:40px;
+  }
+  .degree{
+    font-size:20px;
+  }
+  .fenlei{
+    font-size:20px;
+  }
+  .price{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:599px) {
+
+  /*homePage style*/
+  .showSection {
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    float: left;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0.1px 0.1px 20px gainsboro;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  .showSection:hover {
+    box-shadow: 1px 1px 50px gainsboro;
+  }
+
+  .left-img {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .right-div {
+    float: right;
+    width: 60%;
+  }
+
+  .noneunderline {
+    text-decoration: none;
+    color: white;
+  }
+
+  .noneunderline:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  .position {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  /*************About****************/
+  .wordwrap {
+    width: 100%;
+    padding: 5%;
+    border-radius: 5px;
+    border: solid 1px #2b81af;
+  }
+
+  .floatleft {
+    float: left;
+  }
+
+  .floatright {
+    float: right;
+  }
+
+  .say {
+    background-color: #dff0d8;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  /*myadmin*/
+  .wrap {
+    display: table;
+  }
+
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+
+  .center img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*edit*/
+  .editwrap {
+    border: darkgray solid 1px;
+    padding: 20%;
+    border-radius: 5px
+  }
+  .price{
+    display: inline;
+  }
+  .margin{
+    display: inline;
+  }
+  .cen{
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
